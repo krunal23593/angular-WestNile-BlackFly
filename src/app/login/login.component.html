@@ -1,0 +1,39 @@
+<div class="container">
+  <h2>Wellcome to West Nile</h2>
+  <form id="loginForm" class="form-horizontal"  action="login" method="post" [formGroup]='loginForm' (ngSubmit)='ngLogin(loginForm.value)'>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="userName">Username:</label>
+      <div class="col-sm-4">
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+          <input type="email" class="form-control" name="username" id="userName" formControlName="userName" placeholder="Username" required>
+        </div>        
+        <div class="alert alert-danger" *ngIf="userName.invalid && !userName.pristine">
+          <strong>Username is required.</strong> 
+        </div>         
+      </div>
+    </div>
+     <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd">Password:</label>
+      <div class="col-sm-4">          
+        <div class="input-group">
+          <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+          <input type="password" class="form-control" name="password" id="password" formControlName="password" placeholder="Password" required>
+        </div>
+         <div class="alert alert-danger" *ngIf="password.invalid && !password.pristine">
+           <strong> Password is required. </strong>
+         </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-2">
+        <button type="submit" class="btn btn-success" name="Login" id="Login" value="Login" [disabled] = '!loginForm.valid'>Submit</button>
+      </div>
+    </div>
+    <div class="form-group">      
+       <div class="col-sm-offset-2 col-sm-10">
+        <a [routerLink] = "['/forgotpassword']">Forgot Password ?</a>  |  <a [routerLink] = "['/registration']" class="ahref">Request Account</a>
+       </div>
+    </div>
+  </form>
+</div>

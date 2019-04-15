@@ -1,0 +1,122 @@
+<div class="container">
+  <h2>New Account Request </h2>
+  <h4><label class="control-label">Please fill in this form to create an account.</label></h4>
+  <form class="form-horizontal">
+    <div class="form-group">
+        <label class="radio-inline col-sm-2">
+          <input type="radio" name="virus" checked>WestNile
+        </label>
+        <label class="radio-inline col-sm-2">
+          <input type="radio" name="virus">BlackFly
+        </label>
+    </div>
+    <div id="divWestNile">         
+       <div class="form-group">
+        <label class="control-label col-sm-2" for="firstName">Firstname:</label>
+        <div class="col-sm-4">
+          <input type="text" class="form-control"  placeholder="Enter Name" name="firstname" required>
+        </div>
+       </div>
+       <div class="form-group">
+        <label class="control-label col-sm-2" for="lastName"><b>Last Name:</b></label>
+        <div class="col-sm-4">
+          <input type="text" placeholder="Enter Last Name" class="form-control" name="lastname" required>
+        </div>
+       </div>
+       <div class="form-group">
+         <label class="control-label col-sm-2" for="jobTitle"><b>Job Title:</b></label>
+         <div class="col-sm-4">
+          <input type="text" class="form-control"  placeholder="Enter Job Title" name="jobtitle" required>
+        </div>
+       </div>
+       <div class="form-group">
+         <label class="control-label col-sm-2" for="mailingAddress"><b>Mailing Address: </b></label>
+         <div class="col-sm-4">
+          <textarea class="textarea" class="form-control"  type="text" placeholder="Enter Mailing Address" name="mailingAddress"></textarea>
+         </div>
+       </div>
+       <div class="form-group">
+         <label class="control-label col-sm-2" for="telephoneOffice"><b>Office Phone:</b></label>
+         <div class="col-sm-4">
+          <input type="text" class="form-control"  placeholder="Enter Office Phone" name="telephoneOffice" required>
+         </div>
+       </div>
+       <div class="form-group">
+         <label class="control-label col-sm-2" for="officeFax"><b>Office FAX:</b></label>
+         <div class="col-sm-4">
+          <input type="text" class="form-control"  placeholder="Enter Office Fax" name="officeFax" required>
+         </div>
+       </div>
+       <div class="form-group">
+         <label class="control-label col-sm-2" for="homePhone"><b>Home Phone: </b></label>
+         <div class="col-sm-4">
+          <input type="text" class="form-control"  placeholder="Enter Home Phone" name="homePhone" required>
+         </div>
+       </div>
+       <div class="form-group">
+         <label class="control-label col-sm-2" for="email"><b>Last Name:</b></label>
+         <div class="col-sm-4">
+          <input type="text" class="form-control"  placeholder="Enter Email" name="email" required>
+         </div>
+       </div>
+       <div class="form-group">
+         <label class="control-label col-sm-2" for="userName"><b>User Name:</b></label>
+         <div class="col-sm-4">
+          <input type="text" class="form-control"  placeholder="Enter UserName" name="userName" required>
+         </div>
+       </div>
+       <div class="form-group">
+         <label class="control-label col-sm-2" for="password"><b>Password: </b></label>
+         <div class="col-sm-4">
+          <input type="text" class="form-control"  placeholder="Enter Password" name="password">
+         </div>
+       </div>
+       <div class="form-group">    
+         <label class="control-label col-sm-2" for="reTypePassword"><b>Retype Password: </b></label>    
+         <div class="col-sm-4">
+          <input type="text" class="form-control"  placeholder="Enter Retype Password" name="reTypePassword">
+         </div>
+       </div>
+       <div class="form-group">
+         <label class="control-label col-sm-2" for="reTypePassword"><b>User Group: </b></label> 
+         <div class="col-sm-4">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">User Group
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">User Group1</a></li>
+              <li><a href="#">User Group2</a></li>
+              <li><a href="#">User Group3</a></li>
+            </ul>
+          </div>
+         </div>
+       </div>
+       <div class="form-group">
+         <label class="control-label col-sm-2" for="reTypePassword"><b>Sub Group:  </b></label> 
+         <div class="col-sm-4">
+          <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Sub Group
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sub Group1</a></li>
+              <li><a href="#">Sub Group2</a></li>
+              <li><a href="#">Sub Group3</a></li>
+            </ul>
+          </div>
+         </div>
+       </div>
+       <div class="form-group">
+           <div class="col-sm-offset-2 col-sm-10">
+             <div class="col-sm-1">
+                <button type="submit" class="btn btn-success">Sign Up</button>
+             </div>
+             <div class="col-sm-1">
+                <button type="button" class="btn btn-danger" [routerLink] = "['/login']" >Back</button>
+             </div>
+          </div>
+       </div>
+    </div>  
+    <div id="divBlackFly">     
+    </div> 
+  </form>
+</div>
